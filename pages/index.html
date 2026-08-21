@@ -120,6 +120,14 @@ body{
    min-width:auto on an item lets long words push past the track. */
 .grid > *, .flex > *{ min-width:0; }
 
+/* ---------- responsive: >=576px ---------- */
+@media (min-width:576px){
+  .sm\:block{ display:block; }
+  .sm\:flex{ display:flex; }
+  .sm\:hidden{ display:none; }
+  .sm\:items-center{ align-items:center; }
+}
+
 /* ---------- responsive: >=768px ---------- */
 @media (min-width:768px){
   .md\:block{ display:block; }
@@ -355,8 +363,8 @@ html:not(.js) .imgwrap img{ transform:none; }
   <hr class="rule">
 
   <!-- oversized wordmark -->
-  <h1 class="rv in" style="margin-top:clamp(16px,2.4vw,34px);max-width:clamp(400px,60vw,900px)">
-    <img src="../images/BAHAN PORTOFOLIO.svg" alt="Graphic Designer" style="width:100%;height:auto;display:block">
+  <h1 class="rv in" style="margin-top:clamp(16px,2.4vw,34px);max-width:clamp(300px,80vw,900px);overflow:hidden">
+    <img src="../images/BAHAN PORTOFOLIO.svg" alt="Graphic Designer" style="width:100%;height:auto;display:block;object-fit:contain">
   </h1>
 
   <!-- statement row -->
